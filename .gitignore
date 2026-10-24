@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.dat
+*.top
+*.oxdna
+*.pkl
+*virt2nuc*
+last_conf*
+trajectory*
+energy*

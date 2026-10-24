@@ -1,0 +1,33 @@
+backend = CPU
+backend_precision = double
+sim_type = MD
+interaction_type = DNA2
+salt_concentration = 1.0
+use_average_seq = 1
+T = 25C
+dt = 0.005
+verlet_skin = 0.05
+thermostat = brownian
+newtonian_steps = 103
+diff_coeff = 2.5
+steps = 100000
+topology = blade128.json.top
+conf_file = relax_md_last.dat
+trajectory_file = equil_traj_full.dat
+lastconf_file = equil_last.dat
+energy_file = equil_energy.dat
+print_conf_interval = 100000
+print_energy_every = 5000
+time_scale = linear
+refresh_vel = 1
+restart_step_counter = 1
+no_stdout_energy = 1
+log_file = equil.log
+data_output_1 = {
+    name = equil_traj.dat
+    print_every = 5000
+    col_1 = {
+        type = configuration
+        print_momenta = false
+    }
+}
